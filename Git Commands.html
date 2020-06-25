@@ -1,0 +1,47 @@
+############################################################################################
+==DISCLAIMER==
+The word that start with a capital letter and connected with underscore is a variable which 
+changes based on the condition
+Example: Name_Of_Branch ==> is means you have to input the name of branch
+############################################################################################
+==COMMANDS==
+
+git init 		-> to initialize a git repository
+git add . 		-> to add all new changes to the repo
+git add *Extention_Name	-> to add all file with the mentioned extention
+git commit -m A_Commend	-> to commit all the work that were added before
+
+git status		-> to check the status of a repo whether a file is added or changed
+git log			-> all the commit history
+git log --pretty=oneline -> to see the log in a more organize way
+
+git add remote origin Server_Repo URL	-> to link a local repo to a git server
+touch .gitignore	-> to make a file that you can filled with the names of file or 
+			   folder that you dont want to be added
+git push -u origin master -> to push all the file in local repo to git server
+git clone Server_Repo_URL -> to clone a repo from git server to a local repo
+git pull		-> to update the folder in your local repo from the git server
+
+git reset --soft Commit_ID -> to go back to a previous commit without deleting the existing 
+			      files (only work on local repo, not yet pushed to the git 
+			      server)
+git revert		-> to go back to undo something that already been pushed to the git 
+			   server
+git branch Name_Of_Branch -> create a new branch from the current branch
+git branch -av		-> to see all existing branch
+git checkout Name_Of_Branch -> move to a branch
+git push -u origin Name_Of_Branch -> to push a specific branch
+git merge Name_Of_Branch -> to merge the branch to master (position in master)
+git branch -D Name_Of_Branch -> to delete a branch, make sure you are not in the branch 
+				that you wanna delete. do this when a task on a certain 
+				branch has finished. this only happen locally	
+git push origin --delete Name_Of_Branch -> to delete branch in the server
+
+############################################################################################
+==FURTHER EXPLAINATION==
+
+.gitignore   ->	to ignore a file, just put the name of the file with extention. for folder,
+		put a slash and the name of the folder. 
+		Example: (File) file_example.txt
+			 (Folder) /folder_example
+
